@@ -1083,11 +1083,11 @@ a {
     width: calc(75% - 15px);
   }
 
-  .article-card {
+  .journal__content .article-card {
     width: 30%;
   }
 
-  .article-card--big {
+  .journal__content .article-card--big {
     width: 64%;
   }
 }
