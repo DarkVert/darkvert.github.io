@@ -5,6 +5,10 @@ button:focus {
   outline: none;
 }
 
+li{
+  list-style: none;
+}
+
 body {
   font-family: "Gotham Pro";
 }
@@ -609,16 +613,17 @@ a {
 
 /* season advert style */
 
-.season-advert {
+.season-advert,
+.advert-block {
   margin: 0 0 55px 0;
   width: 100%;
 }
 
 .season-advert__title {
-  margin: 0 0 25px 0;
+  margin: 0 0 40px 0;
 }
 
-.season-advert__product-block {
+.season-advert__product-block .advert-block__product-block {
   width: 100%;
 
   cursor: grab;
@@ -747,6 +752,7 @@ a {
 }
 
 .product__price-discount {
+  width: 145px;
   position: absolute;
   bottom: 20px;
 }
@@ -910,7 +916,7 @@ a {
   justify-content: space-between;
 }
 
-.highland{
+.highland {
   margin: 0 0 0 7px;
 }
 
@@ -1043,7 +1049,15 @@ a {
   color: #000000;
 }
 
-.journal__content {
+.all-products{
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.journal__content,
+.all-products__container {
   width: 100%;
 
   display: flex;
@@ -1052,8 +1066,26 @@ a {
   flex-wrap: wrap;
 }
 
+.all-products {
+  margin: 0 0 40px 0;
+}
+
 .journal__article-card {
   margin: 7px 5px;
+}
+
+.product--small {
+  margin: 5px;
+  width: 222px;
+  height: 185px;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.product--small img {
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -1083,7 +1115,8 @@ a {
     width: calc(75% - 15px);
   }
 
-  .journal__content .article-card {
+  .journal__content .article-card,
+  .product--small {
     width: 30%;
   }
 
@@ -1161,6 +1194,7 @@ a {
   }
 
   .season-advert,
+  .advert-block,
   .another-article {
     display: flex;
     flex-direction: column;
@@ -1177,14 +1211,21 @@ a {
     width: 220px;
   }
 
-  .journal__content {
-    width: 300px;
+  .journal__content,
+  .all-products__container {
+    width: 455px;
   }
 
-  .journal__content .article-card {
+  .journal__content .article-card{
     margin: 5px 0;
     width: 145px;
     height: 175px;
+  }
+  
+  .product--small{
+    margin: 5px 0;
+    width: 145px;
+    height: 115px;
   }
 
   .journal__content .article-card--big {
@@ -1297,21 +1338,21 @@ a {
     text-align: center;
   }
 
-  .footer__payment{
+  .footer__payment {
     width: 190px;
     display: flex;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
-  .footer__container{
+
+  .footer__container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .footer__links a{
+  .footer__links a {
     margin: 8px 0 15px 0;
   }
 }
@@ -1362,7 +1403,8 @@ a {
 
 @media (max-width: 480px) {
   .season-advert__title,
-  .another-article__title {
+  .another-article__title,
+  .advert-block__title {
     margin: 0 0 80px 0;
   }
 
@@ -1372,5 +1414,30 @@ a {
   .owl-next {
     right: calc(50% - 50px);
   }
- 
+
+  .all-products__container{
+    width: 300px;
+  }
+
+  .all-products__product{
+    width: 145px;
+  }
+
+  .all-products__product .product__price p{
+    font-size: 12px;
+  }
+
+  .all-products__product .product__price h4{
+    font-size: 15px;
+  }
+
+  .all-products__product .product__add-block {
+    width: 60px;
+  }
+
+  .all-products__product .product__add-block .add,
+  .all-products__product .product__add-block .remove{
+    width: 20px;
+    height: 20px;
+  }
 }
