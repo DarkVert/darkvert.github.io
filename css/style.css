@@ -1117,6 +1117,11 @@ a {
 @media (max-width: 450px) {
 }
 
+.search__search-input input{
+  width: 200px;
+  height: 35px;
+}
+
 .owl-prev,
 .owl-next {
   position: absolute;
