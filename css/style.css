@@ -1020,6 +1020,14 @@ a {
   .main__center__column {
     width: calc(75% - 15px);
   }
+
+  .article-card{
+    width: 30%;
+  }
+
+  .article-card--big{
+    width: 64%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1107,8 +1115,8 @@ a {
     width: 220px;
   }
 
-  .container {
-    width: 95%;
+  .article-card--big{
+    width: 220px;
   }
 
   .catalog-nav__button {
@@ -1185,6 +1193,18 @@ a {
 
   .burger-btns {
     left: 32px;
+  }
+
+  .journal__title{
+    margin: 15px 0;
+  }
+
+  .journal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 0 90px 0;
   }
 }
 
