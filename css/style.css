@@ -896,8 +896,8 @@ a {
 /* footer style */
 
 .footer {
+  padding: 40px 0;
   width: 100%;
-  height: 208px;
 
   display: flex;
   justify-content: center;
@@ -905,10 +905,72 @@ a {
 }
 
 .footer__container {
-  width: 70%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.highland{
+  margin: 0 0 0 7px;
+}
+
+.footer__row {
+  width: 25%;
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer__logo {
+  margin: 0 0 30px 0;
+}
+
+.footer__row a {
+  margin: 8px 0 8px 0;
+}
+
+.footer__inst-link {
+  display: flex;
+  align-items: center;
+}
+
+.footer p,
+.footer a {
+  width: 100%;
+  font-weight: normal;
+  font-size: 14px;
+
+  color: #8a8a8a;
+}
+
+.footer__inst-link a {
+  margin: 8px 0 8px 5px;
+}
+
+.footer__row p,
+.footer__links a {
+  margin: 8px 0 8px 0;
+}
+
+.footer__payment {
+  width: 180px;
 
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__payment h3 {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: left;
+  color: #000000;
 }
 
 /* спрятанные кнопки burger, которые появляются по мере уменьшения страницы */
@@ -1115,21 +1177,21 @@ a {
     width: 220px;
   }
 
-  .journal__content{
+  .journal__content {
     width: 300px;
   }
 
-  .journal__content .article-card{
+  .journal__content .article-card {
     margin: 5px 0;
     width: 145px;
     height: 175px;
   }
 
-  .journal__content .article-card--big{
+  .journal__content .article-card--big {
     width: 300px;
   }
 
-  .journal__content .article-card__title h3{
+  .journal__content .article-card__title h3 {
     font-size: 14px;
   }
 
@@ -1222,7 +1284,36 @@ a {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
+  .footer__row {
+    margin: 20px 0;
+
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .footer__payment{
+    width: 190px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .footer__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__links a{
+    margin: 8px 0 15px 0;
+  }
 }
 
 .search__search-input input {
@@ -1281,6 +1372,5 @@ a {
   .owl-next {
     right: calc(50% - 50px);
   }
-
-
+ 
 }
