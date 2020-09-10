@@ -530,7 +530,7 @@ a {
 /*-- central row style --*/
 
 .main__center__column {
-  margin: 40px 0 0 38px;
+  margin: 40px 0 90px 38px;
   width: calc(970px - 38px);
 }
 
@@ -790,6 +790,7 @@ a {
 .article-card {
   padding: 0 0 30px 0;
   width: 220px;
+  height: 238px;
 
   background-color: #ffffff;
   border-radius: 10px;
@@ -867,7 +868,7 @@ a {
 }
 
 .load-more {
-  margin: 30px 0 50px 0;
+  margin: 30px 0 0 0;
 }
 
 .load-more button {
@@ -880,7 +881,6 @@ a {
 
   font-weight: normal;
   font-size: 15px;
-  line-height: 14px;
 
   color: #000000;
 
@@ -917,6 +917,81 @@ a {
   display: none;
   align-items: center;
   justify-content: center;
+}
+
+.article-card--big {
+  position: relative;
+  padding: 0;
+  width: 450px;
+  height: 268px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.article-card__image--big {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+  border-radius: 10px;
+
+  z-index: 0;
+}
+
+.article-card__image--big img {
+  height: 100%;
+}
+
+.article-card__title--big{
+  margin: 0 0 10px 20px;
+  width: 195px;
+
+  font-weight: 400;
+  font-size: 20px;
+
+  color: #ffffff;
+  z-index: 1;
+}
+
+.article-card__tags-block--big {
+  margin: 0 0 25px 10px;
+  z-index: 1;
+}
+
+.article-card__tags-block--big a {
+  margin: 0 5px;
+  padding: 1px 7px;
+  height: 10px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 7px;
+  color: #ffffff;
+}
+
+.journal__title h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+
+  color: #000000;
+}
+
+.journal__content {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.journal__article-card {
+  margin: 7px 5px;
 }
 
 @media (max-width: 1200px) {
@@ -1083,7 +1158,6 @@ a {
   }
 
   .catalog-nav__arrow img {
-
     margin: 0 10px 0 0;
   }
 
@@ -1117,7 +1191,7 @@ a {
 @media (max-width: 450px) {
 }
 
-.search__search-input input{
+.search__search-input input {
   width: 200px;
   height: 35px;
 }
@@ -1136,7 +1210,7 @@ a {
   background-size: cover;
   background-position: center;
 
-  transition: all .15s ease-in;
+  transition: all 0.15s ease-in;
 }
 
 .owl-prev {
@@ -1157,7 +1231,7 @@ a {
 }
 
 .owl-prev:hover,
-.owl-next:hover{
+.owl-next:hover {
   transform: scale(1.15);
 }
 
@@ -1172,5 +1246,11 @@ a {
   }
   .owl-next {
     right: calc(50% - 50px);
+  }
+
+  .journal__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
