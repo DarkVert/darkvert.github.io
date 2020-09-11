@@ -1262,11 +1262,6 @@ a {
   .owl-prev {
     top: -40px;
   }
-
-  .search__burger {
-    margin: 0 0 0 20px;
-  }
-
   .advert-block,
   .another-article {
     display: flex;
