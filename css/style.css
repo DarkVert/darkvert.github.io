@@ -1407,6 +1407,10 @@ a {
   .advert-block__title {
     margin: 0 0 80px 0;
   }
+  
+  .burger-nav__container{
+    width: 70%;
+  }
 
   .owl-prev {
     left: calc(50% - 50px);
