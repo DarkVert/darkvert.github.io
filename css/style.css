@@ -376,10 +376,6 @@ a {
   height: 25px;
 }
 
-.search__burger img:hover{
-  transform: scale(1.3);
-}
-
 .burger span {
   margin: 2px 0;
 
