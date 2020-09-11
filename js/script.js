@@ -1,6 +1,9 @@
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
+    autoplay: true,
+    smartSpeed: 1000,
+    autoplayTimeout: 10000,
     nav: true,
     center: false,
     autoWidth: false,
@@ -23,4 +26,3 @@ $(document).ready(function () {
     },
   });
 });
-
