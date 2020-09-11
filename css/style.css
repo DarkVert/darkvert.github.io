@@ -1224,10 +1224,12 @@ a {
   }
 
   .main__left-column {
-    position: absolute;
+    position: fixed;
+    top: 63px;
     left: 0;
 
-    width: 320px;
+    width: 220px;
+    height: calc(100vh - 63px);
     transform: translate(-100%, 0);
   }
 
@@ -1307,9 +1309,16 @@ a {
     font-size: 14px;
   }
 
+  .catalog-nav{
+    border-radius: 0;
+    height: calc(100% - 63px);
+
+    overflow-y: scroll;
+  }
+
   .catalog-nav__button {
     position: absolute;
-    top: 100px;
+    top: 400px;
     right: -80px;
 
     width: 80px;
@@ -1327,7 +1336,7 @@ a {
   .main__left-column input {
     margin: 0;
     position: absolute;
-    top: 100px;
+    top: 400px;
     right: -50px;
 
     width: 50px;
@@ -1369,10 +1378,6 @@ a {
 
   .main__left-column input:checked ~ .catalog-nav__button {
     transform: translate(220px, 0px);
-  }
-
-  .main__left-column input:checked ~ .catalog-nav__button img {
-    transform: rotate(0deg);
   }
 
   .main__left-column input:checked ~ .catalog-nav {
