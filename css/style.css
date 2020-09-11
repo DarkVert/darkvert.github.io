@@ -1309,7 +1309,7 @@ a {
 
   .catalog-nav__button {
     position: absolute;
-    top: 50px;
+    top: 100px;
     right: -80px;
 
     width: 80px;
@@ -1327,7 +1327,7 @@ a {
   .main__left-column input {
     margin: 0;
     position: absolute;
-    top: 50px;
+    top: 100px;
     right: -50px;
 
     width: 50px;
