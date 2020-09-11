@@ -1240,6 +1240,7 @@ a {
     margin: 0;
     width: 90%;
   }
+  
 
   .header__logo img{
     width: 150px;
@@ -1247,7 +1248,6 @@ a {
 
   .header__nav-bar,
   .header__profile-info,
-  .header__contacts,
   .search__sort {
     display: none;
   }
@@ -1255,11 +1255,6 @@ a {
   .burger-nav__contacts{
     margin: 10px 0 25px 25px;
   }
-
-  .header__contacts{
-    width: 20px;
-  }
-
   .page-nav a {
     font-size: 10px;
   }
@@ -1330,6 +1325,11 @@ a {
     -webkit-box-shadow: 1px 1px 3px 0px rgba(50, 50, 50, 0.5);
     -moz-box-shadow: 1px 1px 3px 0px rgba(50, 50, 50, 0.5);
     box-shadow: 1px 1px 3px 0px rgba(50, 50, 50, 0.5);
+  }
+
+  .catalog-nav__links{
+    margin: 0 0 0 calc(100vh / 40);
+    align-items: flex-start;
   }
 
   .catalog-nav__button {
@@ -1469,6 +1469,14 @@ a {
 @media (max-width: 480px) {
   .homepage {
     height: 300px;
+  }
+
+  .header__contacts .header__phone-num{
+    display: none;
+  }
+
+  .header__contacts{
+    width: 20px;
   }
 
   .another-article__title,

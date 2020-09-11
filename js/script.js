@@ -26,3 +26,19 @@ $(document).ready(function () {
     },
   });
 });
+
+$(document).click(function (e) {
+  if (
+    $(e.target).closest(".burger-btns").length == 0 &&
+    $(e.target).closest(".search__burger-checkbox").length == 0
+  ) {
+    $(".search__burger-checkbox").prop("checked", false);
+  }
+
+  if (
+    $(e.target).closest(".main__left-column").length == 0 &&
+    $(e.target).closest(".catalog-nav__checkbox").length == 0
+  ) {
+    $(".catalog-nav__checkbox").prop("checked", false);
+  }
+});
