@@ -1250,7 +1250,7 @@ a {
 
   .owl-next,
   .owl-prev {
-    top: -35px;
+    top: -40px;
   }
 
   .advert-block,
@@ -1331,7 +1331,7 @@ a {
   .another-article__title,
   .advert-block__title {
     text-align: center;
-    margin: 20px 0 40px 0;
+    margin: 20px 0 50px 0;
   }
 
   .catalog-nav__button {
