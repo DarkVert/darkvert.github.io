@@ -349,7 +349,7 @@ a {
   justify-content: center;
 }
 
-.header__burger {
+.header__mobile-block{
   display: none;
 }
 
@@ -1247,6 +1247,8 @@ a {
   }
 
   .header__nav-bar,
+  .header__market,
+  .header__contacts,
   .header__profile-info,
   .search__sort {
     display: none;
@@ -1267,10 +1269,6 @@ a {
   .owl-next,
   .owl-prev {
     top: -40px;
-  }
-
-  .search__burger {
-    margin: 0 0 0 8px;
   }
 
   .advert-block,
@@ -1368,6 +1366,13 @@ a {
     z-index: 3;
 
     transition: all 0.2s ease-in;
+  }
+
+  .header__mobile-block{
+    width: 90px;
+
+    display: flex;
+    justify-content: space-between;
   }
 
   .another-article__title,
@@ -1494,10 +1499,6 @@ a {
 
   .burger-nav__container {
     width: 70%;
-  }
-
-  .header__market .market__total{
-    display: none;
   }
 
   .owl-prev {
