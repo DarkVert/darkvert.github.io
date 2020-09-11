@@ -23,3 +23,21 @@ $(document).ready(function () {
     },
   });
 });
+
+let windowHeight = $(window).height();
+
+$(window).scroll(function () {
+  let x = $(window).scrollTop();
+
+  let btn_pos = 10 + x * 0.1;
+
+  if (windowHeight - btn_pos > 150) {
+    $(".catalog-nav__button").css({
+      top: btn_pos + "px",
+    });
+    $(".catalog-nav__checkbox").css({
+      top: btn_pos + "px",
+    });
+  } 
+
+});

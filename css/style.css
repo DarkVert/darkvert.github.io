@@ -96,8 +96,10 @@ a {
   cursor: pointer;
 }
 
-.profile-info__img {
-  margin: 0 14px 0 0;
+.profile-info__img,
+.market__icon,
+.header-nav__phone-icon {
+  margin: 0 6px 0 0;
 }
 
 .profile-info__name p {
@@ -115,10 +117,6 @@ a {
   cursor: pointer;
 }
 
-.market__icon {
-  margin: 0 14px 0 0;
-}
-
 .market__total p {
   color: #8a8a8a;
 
@@ -128,7 +126,7 @@ a {
 }
 
 .header__contacts {
-  width: 160px;
+  width: 170px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -371,7 +369,7 @@ a {
   z-index: 3;
 }
 
-.search__burger input{
+.search__burger input {
   width: 25px;
   height: 25px;
 }
@@ -1138,7 +1136,7 @@ a {
   text-transform: uppercase;
 }
 
-.profile-info__img {
+.product-info__img {
   margin: 20px 0;
   width: 100%;
 
@@ -1260,10 +1258,13 @@ a {
     top: -50px;
   }
 
-
   .owl-next,
   .owl-prev {
     top: -40px;
+  }
+
+  .search__burger {
+    margin: 0 0 0 20px;
   }
 
   .advert-block,
@@ -1309,16 +1310,20 @@ a {
     font-size: 14px;
   }
 
-  .catalog-nav{
+  .catalog-nav {
     border-radius: 0;
     height: calc(100% - 63px);
 
     overflow-y: scroll;
+
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(50, 50, 50, 0.5);
+    box-shadow: 1px 1px 3px 0px rgba(50, 50, 50, 0.5);
   }
 
   .catalog-nav__button {
     position: absolute;
-    top: 400px;
+    top: 10px;
     right: -80px;
 
     width: 80px;
@@ -1331,12 +1336,18 @@ a {
     background-color: #fff;
 
     border-radius: 0 30px 30px 0;
+
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.5);
+    box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.5);
+
+    transition: all 0.1s ease-in;
   }
 
   .main__left-column input {
     margin: 0;
     position: absolute;
-    top: 400px;
+    top: 10px;
     right: -50px;
 
     width: 50px;
@@ -1354,7 +1365,7 @@ a {
     margin: 20px 0 50px 0;
   }
 
-  .another-article__title{
+  .another-article__title {
     margin: 20px 0 60px 0;
   }
 
@@ -1391,7 +1402,7 @@ a {
   }
 
   .burger-btns {
-    left: 32px;
+    left: 0px;
   }
 
   .journal__title {
