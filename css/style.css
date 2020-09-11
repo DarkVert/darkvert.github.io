@@ -243,10 +243,6 @@ a {
   display: flex;
   align-items: center;
 }
-
-.homepage__img img {
-}
-
 /* -- search block style -- */
 
 .search {
@@ -611,22 +607,11 @@ a {
   color: #000000;
 }
 
-/* season advert style */
+/*  advert style */
 
-.season-advert,
 .advert-block {
   margin: 0 0 55px 0;
   width: 100%;
-}
-
-.season-advert__title {
-  margin: 0 0 40px 0;
-}
-
-.season-advert__product-block .advert-block__product-block {
-  width: 100%;
-
-  cursor: grab;
 }
 
 .product {
@@ -794,7 +779,7 @@ a {
 }
 
 .article-card {
-  padding: 0 0 30px 0;
+  padding: 0 0 10px 0;
   width: 220px;
   height: 238px;
 
@@ -818,7 +803,7 @@ a {
 
 .article-card__image {
   position: relative;
-  height: 150px;
+  width: 100%;
 
   border-radius: 10px;
   overflow: hidden;
@@ -861,10 +846,10 @@ a {
 
 .article-card__tags-block a {
   margin: 0 10px 0 0;
-  padding: 5px 7px;
+  padding: 5px 3px;
 
   font-weight: normal;
-  font-size: 8px;
+  font-size: 7px;
   line-height: 7px;
 
   color: #ffffff;
@@ -989,7 +974,7 @@ a {
 
 .article-card--big {
   position: relative;
-  padding: 0;
+  padding: 0 0;
   width: 450px;
   height: 268px;
 
@@ -1088,6 +1073,40 @@ a {
   width: 100%;
 }
 
+.product-card {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card__ product-info {
+  margin: 25px 0 60px 0;
+  width: 654px;
+}
+
+.product-info__title h1 {
+  font-weight: bold;
+  font-size: 25px;
+
+  color: #000000;
+
+  text-transform: uppercase;
+}
+
+.profile-info__img {
+  margin: 20px 0;
+  width: 100%;
+
+  border-radius: 10px;
+}
+
+.profile-info__img img {
+  width: 100%;
+
+  border-radius: 10px;
+}
+
 @media (max-width: 1200px) {
   .btn-9,
   .btn-8 {
@@ -1178,9 +1197,6 @@ a {
     width: 95%;
   }
 
-  .header__container {
-  }
-
   .header__market,
   .header__nav-bar,
   .header__profile-info,
@@ -1193,7 +1209,6 @@ a {
     font-size: 10px;
   }
 
-  .season-advert,
   .advert-block,
   .another-article {
     display: flex;
@@ -1202,8 +1217,8 @@ a {
   }
 
   .another-article__article-block,
-  .season-advert__product-block {
-    margin: 0 auto;
+  .advert-block__product-block {
+    width: 455px;
   }
 
   .product,
@@ -1230,6 +1245,7 @@ a {
 
   .journal__content .article-card--big {
     width: 300px;
+    height: 185px;
   }
 
   .journal__content .article-card__title h3 {
@@ -1402,13 +1418,24 @@ a {
 }
 
 @media (max-width: 480px) {
-  .season-advert__title,
+  .homepage{
+    height: 300px;
+  }
+
   .another-article__title,
   .advert-block__title {
     margin: 0 0 80px 0;
   }
-  
-  .burger-nav__container{
+
+  .another-article__article-block{
+    width: 300px;
+  }
+
+  .advert-block__product-block{
+    width: 300px;
+  }
+
+  .burger-nav__container {
     width: 70%;
   }
 
@@ -1424,24 +1451,25 @@ a {
     width: 300px;
   }
 
-  .all-products__product {
+
+  .product {
     width: 145px;
   }
 
-  .all-products__product .product__price p {
+  .product__price p {
     font-size: 12px;
   }
 
-  .all-products__product .product__price h4 {
+  .product__price h4 {
     font-size: 15px;
   }
 
-  .all-products__product .product__add-block {
+  .product__add-block {
     width: 60px;
   }
 
-  .all-products__product .product__add-block .add,
-  .all-products__product .product__add-block .remove {
+  .product__add-block .add,
+  .product__add-block .remove {
     width: 20px;
     height: 20px;
   }
