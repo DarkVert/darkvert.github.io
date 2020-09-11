@@ -7,7 +7,7 @@ $(document).ready(function () {
     navText: ["", ""],
     responsive: {
       0: {
-        items: 2,
+        items: 1,
         center: false,
       },
       480: {
