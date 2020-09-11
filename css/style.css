@@ -371,6 +371,11 @@ a {
   z-index: 3;
 }
 
+.search__burger input{
+  width: 25px;
+  height: 25px;
+}
+
 .burger span {
   margin: 2px 0;
 
